@@ -15,7 +15,7 @@ if st.button("Проверка на книгата"):
   elif user_input in books:
     st.success("Книгата съществува в базата данни!")
   else:
-    st.error("Книгата НЕ е в базата данни.")|
+    st.error("Книгата НЕ е в базата данни.")
 
 st.header("Add a book")
 title = st.text_input("Title")
