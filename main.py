@@ -23,9 +23,8 @@ author = st.text_input("Author")
 price = st.number_input("Price", min_value=0.0)
 if st.button("Add the book"):
   book = {"title":title, "author":author, "price":price}
-
-st.session_state.books.append(book)
-st.success("The book is added")
+  st.session_state.books.append(book)
+  st.success("The book is added")
 
 if st.button("Show all books"):
   st.write("No added books")
